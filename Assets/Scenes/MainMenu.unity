@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a755ce1a3af444b83b582dc7c28714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isimalani: {fileID: 0}
+  isimalani: {fileID: 1220251705}
 --- !u!114 &774645168
 MonoBehaviour:
   m_ObjectHideFlags: 0

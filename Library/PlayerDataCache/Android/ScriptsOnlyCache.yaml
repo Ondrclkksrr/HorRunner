@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CharacterMotion
+    - GameManager
     - PhotonManager
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -13,6 +14,9 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PhotonTransformViewEditor
+    - Photon.Pun.PhotonViewInspector
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbody2DView
@@ -76,6 +80,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UI.dll:
+    - UnityEditor.UI.TextEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -85,6 +91,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
@@ -95,7 +102,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -135,8 +142,6 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 768}
-    - Class: 114
       Script: {instanceID: 1600}
     - Class: 114
       Script: {instanceID: 1602}
@@ -160,6 +165,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2740}
     - Class: 114
       Script: {instanceID: 2838}
+    - Class: 114
+      Script: {instanceID: 2986}
     - Class: 114
       Script: {instanceID: 3144}
     - Class: 114
@@ -259,7 +266,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8478}
     - Class: 114
-      Script: {instanceID: 35988}
+      Script: {instanceID: 35980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -291,6 +298,47 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    Assets/Scenes/SampleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 768}
+    - Class: 114
+      Script: {instanceID: 1604}
+    - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
+      Script: {instanceID: 2740}
+    - Class: 114
+      Script: {instanceID: 6040}
+    - Class: 114
+      Script: {instanceID: 6518}
+    - Class: 114
+      Script: {instanceID: 35988}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -2109,5 +2157,6 @@ ScriptsOnlyBuild:
     className: PhotonManager
   platform: 13
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SampleScene.unity
   playerPath: C:/Users/Ondrclkksrr/Desktop/deneme1.apk

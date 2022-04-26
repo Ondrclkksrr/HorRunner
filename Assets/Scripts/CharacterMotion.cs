@@ -42,18 +42,18 @@ public class CharacterMotion : MonoBehaviourPunCallbacks
                 rigid.velocity = new Vector2(0, 0);
             }
             //rigid.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            isimalani.GetComponent<Text>().text= PlayerPrefs.GetString("Name");
+            
         }
+        isimalani.GetComponent<Text>().text = PlayerPrefs.GetString("Name");
 
-
-       /* if (rigid.velocity.x < 0 || rigid.velocity.x>0)
-        {
-            animasyon.SetBool("ýsRunned", true);
-        }
-        else
-        {
-            animasyon.SetBool("ýsRunned", false);
-        }*/
+        /* if (rigid.velocity.x < 0 || rigid.velocity.x>0)
+         {
+             animasyon.SetBool("ýsRunned", true);
+         }
+         else
+         {
+             animasyon.SetBool("ýsRunned", false);
+         }*/
     }
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
